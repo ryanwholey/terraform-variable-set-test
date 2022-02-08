@@ -28,7 +28,6 @@ terraform {
   }
 }
 
-
 resource "restapi_object" "variable_set" {
   path = "/varsets"
 
