@@ -31,7 +31,7 @@ terraform {
 resource "restapi_object" "variable_set" {
   path = "/varsets"
 
-  create_path = "/organizations/ryanwholey/varsets"
+  create_path = "/organizations/${var.tf_organization}/varsets"
   data = jsonencode({
     data = {
       type = "varsets"
